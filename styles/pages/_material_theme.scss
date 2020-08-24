@@ -1,0 +1,110 @@
+// input[type='radio'],
+// input[type='checkbox'] {
+// 	box-sizing: border-box;
+// 	padding: 0;
+// 	position: absolute;
+// 	opacity: 0;
+// }
+
+.MuiTypography-root.MuiFormControlLabel-label {
+	color: $navy_blue !important;
+}
+.MuiInputBase-root {
+	color: $navy_blue !important;
+}
+.MuiIconButton-root {
+	color: $navy_blue !important;
+}
+
+.MuiRadio-colorSecondary.Mui-checked {
+	color: $jaffa !important;
+}
+
+.MuiInput-underline:before {
+	border-bottom: 2px solid #00000029 !important;
+}
+
+.MuiIconButton-colorSecondary {
+	color: $jaffa !important;
+}
+
+.MuiIconButton-colorWhite {
+	color: #ffffff !important;
+}
+
+.MuiCheckbox-colorSecondary.Mui-checked {
+	color: $jaffa !important;
+}
+
+// .MuiInput-underline:after {
+// 	left: 0;
+// 	right: 0;
+// 	bottom: 0;
+// 	content: '';
+// 	position: absolute;
+// 	transform: scaleX(0);
+// 	transition: transform 200ms cubic-bezier(0, 0, 0.2, 1) 0ms;
+// 	border-bottom: 2px solid $navy_blue !important;
+// 	pointer-events: none;
+// }
+
+.MuiInputLabel-root.Mui-focused {
+	color: $navy_blue !important;
+}
+
+.MuiInputBase-input.MuiInput-input {
+	color: $navy_blue !important;
+}
+
+.MuiInputBase-input.MuiInput-input {
+	color: $navy_blue !important;
+}
+
+input.MuiInputBase-input.MuiInput-input {
+	color: $navy_blue !important;
+}
+
+.MuiAccordion-rounded:first-child {
+	border-top-left-radius: 30px !important;
+	border-top-right-radius: 30px !important;
+	background: #ffffff 0% 0% no-repeat padding-box;
+	box-shadow: 0px 6px 30px #00000029;
+}
+
+.MuiAccordion-rounded:last-child {
+	border-bottom-left-radius: 30px !important;
+	border-bottom-right-radius: 30px !important;
+}
+
+.MuiAccordion-rounded {
+	border-top-left-radius: 30px !important;
+	border-top-right-radius: 30px !important;
+	border-bottom-left-radius: 30px !important;
+	border-bottom-right-radius: 30px !important;
+	margin-bottom: 4px !important;
+}
+
+.MuiAccordion-root:before {
+	background-color: transparent !important;
+}
+
+// input:-internal-autofill-selected {
+// 	-webkit-appearance: menulist-button;
+// 	background-color: transparent !important;
+// 	background-image: none !important;
+// 	color: $navy_blue !important;
+// }
+
+.MuiFormControl-root.sad {
+	border: 0;
+	margin: 0;
+	display: inline-flex;
+	padding: 0;
+	position: relative;
+	min-width: 0;
+	flex-direction: column;
+	vertical-align: top;
+	left: -17px;
+	background: var(--blue);
+	width: 150px;
+}

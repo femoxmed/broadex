@@ -1,0 +1,36 @@
+$white: #ffffff;
+$whisper: #eeebeb;
+$white_smoke: #f4f4f4;
+$dim_gray: #707070;
+$grey_suit: #909094;
+$navy_blue: #000080;
+$blue: #0909be;
+$darkblue: #010134;
+$black1: #040404;
+$black2: #00000033;
+$black3: #00000029;
+$jaffa: #f58634;
+$dark_pink: #e03347;
+
+$base-font-size: 16px;
+
+//breakpoints
+$mobile-width: 576px;
+$tablet-width: 768px;
+$desktop-width: 992px;
+$large-desktop-width: 1200px;
+
+// theming bootstrap
+$theme-colors: (
+	'navy_blue': $navy_blue,
+	'blue': $blue,
+	'dim-grey': $dim-gray,
+	'grey_suit': $grey_suit,
+);
+
+$colors: (
+	'navy_blue': $navy_blue,
+	'blue': $blue,
+	'dim-grey': $dim-gray,
+	'grey_suit': $grey_suit,
+) !default;

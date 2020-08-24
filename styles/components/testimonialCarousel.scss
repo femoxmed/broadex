@@ -1,0 +1,26 @@
+.brdx-testmonial-carousel {
+  > ol.carousel-indicators {
+    // position: relative;
+    bottom: -87px;
+
+    li {
+      width: 25px;
+      height: 25px;
+      background-color: #dfdada;
+      border-radius: 50%;
+
+      @include media-breakpoint-up(pxToRem($desktop-width)) {
+        width: 18px;
+        height: 18px;
+      }
+
+      &.active {
+        background-color: $jaffa;
+      }
+    }
+  }
+
+  .carousel-inner {
+    overflow: unset;
+  }
+}

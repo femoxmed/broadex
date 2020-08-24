@@ -1,0 +1,215 @@
+.banner {
+  // background-color: $navy_blue;
+  background-image: url(../../@static/svg/banner-bg-sm.svg);
+  background-position: 57% 100%;
+  padding-bottom: pxToRem(100px);
+  padding-top: 4%;
+
+  @include media-breakpoint-up(pxToRem(500px)) {
+    background-image: url(../../@static/svg/banner-bg-t.svg);
+  }
+  @include media-breakpoint-up(pxToRem($tablet-width)) {
+    background-image: url(../../@static/svg/banner-bg-tab.svg);
+    background-position: 60% 100%;
+    padding-bottom: 148px !important;
+  }
+
+  &-leadingtext {
+    font-size: pxToRem(20px);
+    font-family: 'Museo Sans 100';
+    color: $white;
+    font-style: italic;
+
+    &-bm {
+      font-family: 'Museo Sans 500';
+      font-style: normal;
+    }
+  }
+
+  &-d {
+    background-image: url(../../@static/svg/banner-sh1.svg),
+      url(../../@static/svg/banner-sh2.svg);
+    background-repeat: no-repeat;
+    background-position: 120% 91%;
+    @include media-breakpoint-up(pxToRem($large-desktop-width)) {
+      background-position: 157% 91%;
+      background-position: -1282px -1500px, 130px -1500px;
+    }
+  }
+
+  &-input {
+    &-label {
+      font-size: pxToRem(10px);
+      font-family: 'Museo Sans 500';
+      font-style: italic;
+      color: $white;
+
+      &--d {
+        @extend .banner-input-label;
+        font-size: pxToRem(12px);
+        color: $grey_suit;
+      }
+    }
+  }
+
+  &-slant {
+    position: relative;
+    background-color: #e6e6e6;
+    text-align: center;
+    font-size: pxToRem(17px);
+    overflow: hidden;
+    -ms-transform: skewX(-32deg);
+    -webkit-transform: skewX(-32deg);
+    transform: skewX(-32deg);
+
+    &--d {
+      @extend .banner-slant;
+      background: #ffffff 0% 0% no-repeat padding-box;
+      border: 1px solid $navy_blue;
+    }
+
+    &-input {
+      background: #e6e6e6;
+      -ms-transform: skewX(32deg);
+      -webkit-transform: skewX(32deg);
+      transform: skewX(32deg);
+      border: none;
+      color: $navy_blue;
+      font-family: 'Museo Sans 700';
+
+      &--group {
+        transform: skewX(-32deg);
+        background-color: $blue;
+        border: none;
+
+        &::after {
+          content: '';
+          position: absolute;
+          width: pxToRem(27px);
+          height: 100%;
+          background-color: $blue;
+          transform: skew(32deg);
+          right: pxToRem(-11px);
+          top: 0;
+          bottom: pxToRem(19px);
+          z-index: -1;
+        }
+      }
+
+      &:focus {
+        color: $navy_blue;
+        background-color: #e6e6e6;
+        border-color: transparent;
+        outline: 0;
+        box-shadow: none;
+      }
+
+      &-btn {
+        color: $white;
+      }
+
+      &--d {
+        @extend .banner-slant-input;
+        background: $white 0% 0% no-repeat padding-box;
+
+        &:focus {
+          background-color: $white;
+        }
+      }
+    }
+  }
+
+  &-btn-play {
+    font-family: 'Museo Sans 500';
+    font-size: pxToRem(14px);
+    font-style: italic;
+    color: $jaffa;
+  }
+
+  &-taodw {
+    background-color: $navy_blue;
+    color: $white;
+    padding: pxToRem(80px, 0, 100px);
+  }
+
+  &-world-map {
+    position: relative;
+    background-image: url(../../@static/svg/world-map-sm2.svg);
+    height: pxToRem(346px);
+    background-position: center;
+    width: 88%;
+    background-repeat: no-repeat;
+
+    @include media-breakpoint-up(pxToRem($desktop-width)) {
+      height: 28.625rem;
+      background-image: url(../../@static/svg/world-map-lg.svg);
+      background-size: contain;
+    }
+  }
+}
+
+// .react-custom-flag-select__select__dropdown-flag___4-6D7 {
+//   border-radius: 50%;
+// }
+
+#youSend,
+#youRecieve {
+  transform: skewX(32deg);
+}
+
+.brdx-footer {
+  // overflow: hidden;
+  background-image: url(../../@static/svg/footer-bg.svg);
+  height: 100%;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-position: 34% 50%;
+
+  @include media-breakpoint-up(pxToRem($desktop-width)) {
+    background-image: url(../../@static/svg/footer-bg-d.svg);
+    background-position: 63% 32%;
+  }
+}
+
+.trusted-bg {
+  background-image: url(../../public/images/trusted-bg.svg);
+  height: 100%;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-position: 60% 60%;
+
+  @include media-breakpoint-up(pxToRem($desktop-width)) {
+    background-image: url(../../public/images/svgs/trusted-bg-d.svg);
+    background-position: 77% -18%;
+    background-size: 102% 74%;
+  }
+}
+
+.Path_51 {
+  overflow: visible;
+  position: absolute;
+  width: 109%;
+  height: 1251.509px;
+  left: -59px;
+  top: -299px;
+  transform: matrix(1, 0, 0, 1, 0, 0);
+}
+
+.shape-bottom img.bottom-shape {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -2px;
+  z-index: 1;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.bag-bg-d {
+  background-image: linear-gradient(rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.9)),
+    url(../../public/images/bag-bg.png);
+  height: 100%;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-position: 60% 60%;
+}

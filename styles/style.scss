@@ -1,0 +1,80 @@
+@import url('https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.4.6/css/flag-icon.min.css');
+
+@import './global';
+@import './components/buttons.scss';
+@import './components/auth-pages.scss';
+@import './components/testimonialCarousel.scss';
+@import './pages/landingPage.scss';
+@import './pages/material_theme.scss';
+
+//OR import sass module
+// @import 'react-flags-select/scss/react-flags-select.scss';
+
+$body-color: #121233;
+
+.cursor-pointer {
+	cursor: pointer !important;
+}
+
+.dropdown {
+	transform: skewX(32deg) !important;
+}
+.dropdown button.btn-secondary {
+	color: #ffffff;
+	background-color: transparent !important;
+	border-color: transparent !important;
+
+	&.btn-secondary.focus {
+		box-shadow: transparent !important;
+	}
+
+	.btn-secondary:not(:disabled):not(.disabled):active:focus,
+	.btn-secondary:not(:disabled):not(.disabled).active:focus,
+	.show > .btn-secondary.dropdown-toggle:focus {
+		box-shadow: none !important;
+	}
+
+	&.dropdown-toggle::after {
+		display: inline-block;
+		margin-left: 0.255em;
+		vertical-align: 0.255em;
+		content: '';
+		border-top: 0.3em solid;
+		border-right: 0.3em solid transparent;
+		border-bottom: 0;
+		border-left: 0.3em solid transparent;
+		position: absolute !important;
+		right: -7px;
+		top: 16px;
+	}
+
+	.btn-secondary:focus,
+	.btn-secondary.focus {
+		color: #ffffff;
+		background-color: transparent !important;
+		border-color: transparent !important;
+
+		box-shadow: none !important;
+	}
+}
+
+.btn-secondary:focus,
+.btn-secondary.focus {
+	color: #ffffff;
+	background-color: transparent !important;
+	border-color: transparent !important;
+
+	box-shadow: none !important;
+}
+
+.dropdown-menu {
+	height: 150px;
+	overflow: auto;
+	min-width: 50px;
+}
+
+.btn-secondary:not(:disabled):not(.disabled):active:focus,
+.btn-secondary:not(:disabled):not(.disabled).active:focus,
+.show > .btn-secondary.dropdown-toggle:focus {
+	box-shadow: none !important;
+}
